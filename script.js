@@ -4,6 +4,7 @@ let objetoPlastico = document.querySelector("#Plastico")
 let objetoLata = document.querySelector("#Lata")
 let objetoPila = document.querySelector("#Pila")
 let objetoBolsa = document.querySelector("#Bolsa")
+let objetoZapatilla = document.querySelector("#Zapatilla")
 
 
 if(objetoBolsa != null){
@@ -88,6 +89,26 @@ if(objetoPlastico != null){
     let mensaje = document.createTextNode("p")
     mensaje.textContent = "Nombre: BOTELLA DE PLÁSTICO, Tiempo de descomposición: 150 años"
     contenedorNombre.appendChild(mensaje);
+
+    }
+)
+}
+
+
+if(objetoZapatilla != null){
+
+    objetoZapatilla.addEventListener("click",
+    function mostrarInformacion() {
+  
+        
+        let contenedorNombre = document.querySelector("#Mensaje")
+        while (contenedorNombre.hasChildNodes()) {
+            contenedorNombre.removeChild(contenedorNombre.firstChild);
+        }
+        let mensaje = document.createTextNode("p")
+        mensaje.textContent = "Nombre: ZAPATILLA, Tiempo de descomposición: 200 años"
+        contenedorNombre.appendChild(mensaje);
+        
 
     }
 )
